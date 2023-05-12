@@ -247,6 +247,22 @@ section{
     text-align: center;
 }
 
+.challenges .challenges-content img{
+    
+    margin-left: 40%;
+    width: 20%;
+    height: 20%;
+    position: relative;
+    text-align: center;
+}
+
+.protocols .protocols-content img{
+    
+    margin-left: 20%;
+    position: relative;
+    text-align: center;
+}
+
 /*  sessão footer  */
 footer{
     background: #111;
