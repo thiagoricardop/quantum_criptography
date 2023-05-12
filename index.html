@@ -93,19 +93,19 @@
                 <img src="https://i.stack.imgur.com/qbejE.png" alt="">
                 <div class="text-1">
                     <br><br>
-                    <p>1. You (Alice) want to send a secret message to your friend (Bob). </p>
+                    <p>1. 	Preparation (Alice): Alice randomly generates two strings of the same length, one for the bit values (0 or 1) and one for the basis (rectilinear 0°/90° or diagonal 45°/135°). Each bit and basis pair is used to prepare a quantum bit (qubit).</p>
                     <br><br>
-                    <p>2. You use a special device called a "quantum key distribution" (QKD) system to send individual photons to Bob in different orientations, like vertical, horizontal, or diagonal.</p>
+                    <p>2. 	Transmission (Alice to Bob): Alice sends these qubits over a quantum channel to Bob.</p>
                     <br><br>
-                    <p>3. Bob uses another device to measure the orientation of the photons you send. </p>
+                    <p>3. 	Measurement (Bob): Bob also randomly chooses a basis (either rectilinear or diagonal) to measure each incoming qubit. The measurement collapses the qubit state to a bit value in Bob's chosen basis. </p>
                     <br><br>
-                    <p>4. After measuring the photons, Bob tells you, through a normal communication channel, which orientations he detected but not the actual results. </p>
+                    <p>4. 	Basis Comparison: After all qubits are measured, Alice and Bob publicly compare their basis choices for each qubit, not revealing actual bit values. For each qubit where Bob's basis matches Alice's, the bit value is kept; all others are discarded. </p>
                     <br><br>
-                    <p>5. You both compare the orientations you sent and the ones Bob detected. If there are no errors, you know that no one intercepted the photons, and you can use the sequence of orientations to create a secret key.  </p>
+                    <p>5. 	Key Generation: The resulting bit values where their bases matched form a shared secret key.  </p>
                     <br><br>
-                    <p>6. With this secret key, you can encrypt your message, send it to Bob, and he can decrypt it using the same key. Your secret message is now securely sent.  </p>
+                    <p>6. 	Eavesdropping Check: They then randomly choose a subset of these bits to check for eavesdropping. If they match, likely no eavesdropper (Eve) has tampered with the quantum channel. If not, they discard the key and start over.  </p>
                     <br><br>
-                    <p>7. If someone tries to intercept and measure the photons while they're being sent (let's call this person Eve), the principles of quantum mechanics cause the photons' orientations to change. This would result in errors when Bob tries to measure the orientations, which alerts you and Bob that someone was eavesdropping. </p>
+        
                     
 
                 </div>
