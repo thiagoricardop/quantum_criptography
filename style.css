@@ -232,9 +232,17 @@ section{
     position: relative;
     text-align: center;
 }
+
 .attack .attack-content img{
     
     margin-left: 3.5%;
+    position: relative;
+    text-align: center;
+}
+
+.attack .img-1 img{
+    
+    margin-left: 40%;
     position: relative;
     text-align: center;
 }
