@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owncloud  | Front</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-VPkv2rJ2nkzRrpKMkbzxoCf+M5TJN4gkUvE7kX1DU6LQxlKljLqRZ2rHj0w+U2f/hqdefault/5f/9/h/20/a/9/hqdefault.webp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+    <style>
+        @font-face {
+            font-family: 'tesla';
+            src: url("/fontes/tesla.ttf");
+            
+        }
+        .logo {
+            font-family: 'tesla';
+            font-family: 'Share Tech Mono';font-size: 22px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#home">Quantum </span>Criptography</span></a></div>
+            <ul class="menu">
+                <li><a href="#about">Introduction</a></li>
+                <li><a href="#services">Methods</a></li>
+                <li><a href="#skills">State of art</a></li>
+                <li><a href="#protocols">Protocols</a></li>
+                <li><a href="#attack">Attack Methods</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <!--home inicio-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <h2 class="home-title">Fundamentals of the Security in Communications</h2>
+            <div class="home-content">
+                <img src="images/VSB.png" alt="">
+                
+                <div class="text-1"><a><strong>Student:</strong> <span> Caio Almeida Ribeiro</span><strong> ID:</strong><span> ALM0016</span></a></div>
+                <div class="text-1"><a><strong>Student:</strong> <span> Thiago Ricardo Oliveira Pinto</span><strong> ID:</strong><span> RIC0131</span></a></div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Introduction</h2>
+            <div class="about-content">
+                
+                <div class="text-1">
+                    <p>Quantum cryptography represents an innovative approach to securing communications, utilizing quantum mechanics instead of traditional mathematical algorithms. This method relies on the unique properties of quantum physics, such as entanglement and superposition, to generate encryption keys that are impervious to eavesdropping. </p>
+                    <br><br>
+                    <p>The core concept of quantum cryptography is its ability to detect any attempt at eavesdropping by unauthorized parties. Since the act of eavesdropping alters the state of the quantum system, it becomes immediately noticeable and stops intruders from accessing the information. </p>
+                    <br><br>
+                    <p>There are several benefits of using quantum cryptography over conventional methods. For one, it guarantees absolute security, as it is grounded in the principles of physics rather than mathematical conjecture. This level of security is unmatched by classical cryptography, making quantum cryptography an ideal choice for highly confidential communications. Additionally, quantum cryptography has the potential to resist attacks by quantum computers, offering a secure means of key exchange. </p>
+                    <br><br>
+                    <p>Despite its numerous advantages, quantum cryptography is still in the early stages of development and has yet to be widely implemented. This is mainly due to various technical and practical challenges. However, as quantum computing continues to evolve and classical cryptography becomes increasingly vulnerable, it is anticipated that quantum cryptography will play a pivotal role in safeguarding communications in the years to come.</p>
+                    
+                </div>
+                <img src="https://i.giphy.com/media/AUMxbiDIzBOiFGA71r/giphy.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">How does it work?</h2>
+            <div class="serv-content">
+                
+                <div class="text-1">
+                    <p>Imagine you want to send a secret message to your peer. In everyday situations, you might write the message in code and give your peer a key to decode it. However, if someone intercepts your message and somehow gets the key, they could read your secret message too. </p>
+                    <br><br>
+                    <p>This is where quantum cryptography comes in. It provides a super-secure way to send secret messages by using photons to share a secret key between you and your peer. The key is a series of random numbers that you both can use to encrypt and decrypt your message.</p>
+                    <br><br>
+                    <p>Here's a simplified explanation of how quantum cryptography works: 
+                    </p>
+                </div>
+                <img src="https://i.stack.imgur.com/qbejE.png" alt="">
+                <div class="text-1">
+                    <br><br>
+                    <p>1. You (Alice) want to send a secret message to your friend (Bob). </p>
+                    <br><br>
+                    <p>2. You use a special device called a "quantum key distribution" (QKD) system to send individual photons to Bob in different orientations, like vertical, horizontal, or diagonal.</p>
+                    <br><br>
+                    <p>3. Bob uses another device to measure the orientation of the photons you send. </p>
+                    <br><br>
+                    <p>4. After measuring the photons, Bob tells you, through a normal communication channel, which orientations he detected but not the actual results. </p>
+                    <br><br>
+                    <p>5. You both compare the orientations you sent and the ones Bob detected. If there are no errors, you know that no one intercepted the photons, and you can use the sequence of orientations to create a secret key.  </p>
+                    <br><br>
+                    <p>6. With this secret key, you can encrypt your message, send it to Bob, and he can decrypt it using the same key. Your secret message is now securely sent.  </p>
+                    <br><br>
+                    <p>7. If someone tries to intercept and measure the photons while they're being sent (let's call this person Eve), the principles of quantum mechanics cause the photons' orientations to change. This would result in errors when Bob tries to measure the orientations, which alerts you and Bob that someone was eavesdropping. </p>
+                    
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">State of art</h2>
+            
+            <div class="skills-content">
+                
+                <div class="text-1">
+                    <p>Quantum cryptography has made significant strides in both theoretical research and practical applications in recent years. One of the most notable achievements is the successful demonstration of long-distance quantum key distribution (QKD) using fiber-optic and free-space channels, made possible through the creation of efficient quantum repeaters and cutting-edge single-photon detectors. </p>
+                    <br><br>
+                    <p>The emergence of new cryptographic protocols is being witnessed, extending beyond QKD. These include quantum coin flipping, bit commitment, and secret sharing, which have the potential to greatly enhance security and functionality in various applications. </p>
+                    <br><br>
+                    <p>Furthermore, the commercialization of quantum cryptography systems has seen substantial progress. Several companies now offer products based on QKD, which have been effectively deployed in diverse scenarios such as financial transactions, government communications, and military operations. </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="protocols" id="protocols">
+        <div class="max-width">
+            <h2 class="title">Most used protocols</h2>
+            
+            <div class="protocols-content">
+                
+                <div class="text-1">
+                    <p>Discrete-Variable QKD (DV-QKD): This type of QKD implementation is based on encoding and decoding information using individual photons with discrete quantum states, such as polarization. Examples of DV-QKD include: </p>
+                    <br>
+                    <p> a. BB84 Protocol: The first and most well-known QKD protocol, developed by Charles Bennett and Gilles Brassard in 1984. It uses four distinct polarization states (horizontal, vertical, diagonal, and anti-diagonal) to represent the encoded information. </p>
+                    <br>
+                    <p> b. B92 Protocol: A simplified version of BB84, proposed by Charles Bennett in 1992. It uses only two non-orthogonal quantum states to encode the information. </p>
+                    <br><br><br>
+                    <p>Continuous-Variable QKD (CV-QKD): In CV-QKD implementations, information is encoded using continuous quantum states, such as the amplitude and phase quadratures of a light field. One advantage of CV-QKD is that it can be more easily integrated with existing optical communication infrastructure. Examples of CV-QKD include: </p>
+                    <br>
+                    <p> a. Gaussian-modulated coherent state (GMCS) protocol: This protocol encodes information using Gaussian-distributed coherent states of light, which can be generated and detected using standard telecom components. </p>
+                    <br>
+                    <p> b. Displacement-based protocol: In this protocol, information is encoded by displacing a squeezed vacuum state in phase space. It offers the potential for higher secret key rates compared to GMCS.</p>
+                    <br><br><br>
+                    <p>Entanglement-Based QKD: These implementations rely on the quantum phenomenon of entanglement, where the properties of two or more particles become correlated, even when separated by large distances. Entangled photons are distributed between the sender and receiver, and their measurements are used to generate a shared secret key. Examples of entanglement-based QKD include: </p>
+                    <br>
+                    <p> a. E91 Protocol: Developed by Artur Ekert in 1991, this protocol uses pairs of entangled photons and takes advantage of the violation of Bell inequalities to guarantee the security of key distribution. </p>
+                    <br>
+                    <p>b. BBM92 Protocol: Proposed by Charles Bennett, Gilles Brassard, and N. David Mermin in 1992, this protocol is an entanglement-based version of the BB84 protocol. </p>
+                    
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="attack" id="attack">
+        <div class="max-width">
+            <h2 class="title">Known attack methods</h2>
+            
+            <div class="attack-content">
+                
+                <div class="text-1">
+                    <p>Many of the attack methods that are commonly used are also, present at quantum cryptography, such as trojan-horse and DoS. However, some others are seen only in quantum cryptographed systems, such as: </p>
+                    <br><br>
+                    <p>- Eavesdropping Attack: In this attack, an eavesdropper, usually denoted as Eve, intercepts the quantum states sent by the sender (Alice) and measures them before forwarding them to the receiver (Bob). It can be detected by checking for errors in the transmission. </p>
+                    <br><br>
+                </div>
+                <img src="images/attacks.jpeg" alt="">
+                <div>
+                    <br><br>
+                    <p>- Beam-Splitting Attack: This one specifically targets QKD protocols that use weak coherent pulses. An attacker splits the incoming signal into two parts, keeping one part and forwarding the other to the intended recipient. This allows the attacker to perform measurements on the retained part without disturbing the system's overall error rate. </p>
+                    <br><br>
+                    <p>Photon-Number Splitting Attack: An eavesdropper exploits the multiphoton emissions in weak coherent pulse-based QKD systems. The attacker splits the photons in such a way that they can measure one photon while forwarding the others without raising any suspicion. This attack can be mitigated by using decoy states or single-photon sources. </p>
+                    <br><br>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges" id="challenges">
+        <div class="max-width">
+            <h2 class="title">Challenges</h2>
+            
+            <div class="challenges-content">
+                
+                <div class="text-1">
+                    <p>In our opinion, quantum cryptography has the potential to revolutionize secure communication, but its practical implementation faces several obstacles. One of the key challenges is the limited transmission distance of quantum states like photons, since they’re susceptible to loss and alteration due to factors like absorption and scattering. The restricted range of a few hundred kilometers presents a considerable hurdle for its widespread adoption. </p>
+                    <br><br>
+                    <p>The scalability of quantum networks is also a major issue. Our existing infrastructure and protocols are ill-equipped to manage the unique requirements of quantum communication. This calls for innovative ways to route, multiplex, and manage quantum signals, which is easier said than done.</p>
+                    <br><br>
+                    <p>Furthermore, integrating quantum cryptographic systems with conventional communication infrastructure is no easy task. It demands the development of new hybrid systems, protocols, and standards that can effectively bridge the gap between quantum and legacy technologies. </p>
+                    <br><br>
+                    <p>The cost and complexity of implementing quantum cryptographic systems also pose a significant barrier. Compared to traditional cryptographic solutions, quantum cryptography tends to be more expensive and complex, making it less accessible for smaller organizations and individual users. This cryptographic method may also increase the power consumption, as it is more complex and it on its early development stage, going against the world’s goals on reducing CO2 emissions.  </p>
+                    <br><br>
+                    <p>Last but not least, the advent of quantum computing is a double-edged sword. Although quantum cryptography relies on the laws of quantum mechanics for security, quantum computers could potentially undermine this security by exploiting other vulnerabilities or weaknesses in the system. </p>
+                    <br><br>
+                    <p>In conclusion, despite the promising potential of quantum cryptography, we must address and overcome these challenges before it can be widely adopted and effectively integrated into our existing communication systems.</p>
+                    <br><br>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="references" id="references">
+        <div class="max-width">
+            <h2 class="title">References</h2>
+            
+            <div class="references-content">
+                
+                <div class="text-1">
+                    <p>- MAO, Wenbo. Modern Cryptography: Theory and Practice. 3rd ed. Pearson, 2013.</p>
+                    <br><br>
+                    <p>- KATZ, Jonathan, and YEHUDA Lindell. Introduction to Modern Cryptography. 2nd ed. Chapman and Hall/CRC, 2014. </p>
+                    <br><br>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--sessão  footer-->
+    <footer>
+        <span>Created by <a href="https://www.linkedin.com/in/thiagoricardop">Thiago Ricardo</a> | All rights reserved 2023</span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</body>
+</html>
